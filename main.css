@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+html {
+    min-height: 100%;
+}    
+body {
+     height: 100vh;
+
+}
+.projects{margin-bottom: 0;}
+
+.bi {
+  background: linear-gradient(to left, purple, blue);
+  padding: 1.5rem;
+}
+
+p {
+  font-size: 2rem;
+  color: aliceblue;
+}
+.bio > p {
+ max-width: 700px;
+margin: 0 auto;
+}
+.projects {
+  background: burlywood;
+  height: calc(100% - (100px + 150px));
+  /* height: 50vh; */
+}
+
+.skills{
+  background-color: #f19c79;
+}
