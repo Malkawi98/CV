@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
-    font-family: "Spectral", serif;
+  font-family: "Spectral", serif;
+  color: white;
+  --color: #ff577a;
 }
+
 /*html {*/
 /*    min-height: 100%;*/
 /*}*/
@@ -10,43 +13,70 @@
 
 /*}*/
 
-body{
+body {
   background-color: #28282d;
 }
 
-.header-container{
-    height: 100%;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+.header-container {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 ul > li {
-    display: inline-block;
-    margin: 0 1rem;
+  display: inline-block;
+  margin: 0 1rem;
   list-style-type: none;
 }
 
 button {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-text-size-adjust: 100%;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-    box-sizing: inherit;
-    text-decoration: none;
-    background-color: transparent;
-    transition: 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    padding: 0.5rem;
-    background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
-    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
-    opacity: 0.85;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  box-sizing: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  box-shadow: 0 0 20px 0 rgba(255, 88, 96, 0.5);
+  opacity: 0.85;
+}
+
+
+.container {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*flex-direction: column;*/
+  height: 100%;
+  width: 100%;
+  background-color: #28282d;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pink {
+    color: var(--color);
+}
+.flex {
+  display:flex;
+}
+
+footer {
+  justify-content: space-around;
+}
+
+footer > div > p:nth-child(1) {
+  margin-right: 10px;
 }
