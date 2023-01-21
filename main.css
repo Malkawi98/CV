@@ -69,7 +69,7 @@ ul > li {
   width: 175px;
 }
 
-button {
+button, .btn {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   font-size: 1rem;
