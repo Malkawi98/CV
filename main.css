@@ -106,12 +106,14 @@ button, .btn {
   -webkit-box-align: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
   padding: 0 150px;
 
 }
 
+.bio {
+  min-height: 100vh;
+  height: 100vh;
+}
 .pink {
     color: var(--color);
 }
@@ -156,4 +158,3 @@ body {
   font-size: 20px;
   line-height: 1.3;
 }
-
