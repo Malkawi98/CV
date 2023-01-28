@@ -19,7 +19,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="">Experience</a></li>
     <li><a href="">Projects</a></li>
-    <li><a href="">Contact</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li>
       <a class="btn"
          href="https://www.dropbox.com/s/kjjio0729vwfjp2/Hamza%20Malkawi%20-%20CV.pdf?dl=0">Resume</a>
@@ -30,12 +30,14 @@
 <div class="container bio">
   <p>Hello 👋, my name is</p>
   <p class="pink big-heading">Hamza Malkawi</p>
-<!--  I make the web simple, I code for the web-->
+  <!--  I make the web simple, I code for the web-->
   <p class="big-heading">I craft things for the web</p>
   <p class="statement">
-    I'm a software engineer from Amman, Jordan. I love making stuff that you can find on the internet,
+    I'm a software engineer from Amman, Jordan. I love making stuff that you can find on the
+    internet,
     like websites and apps. My goal is to always make sure that what I build looks and works great,
-    and it's easy to use. Right now, I'm working at <a class="pink" href="https://www.bayt.com/">Bayt.com</a>, and I'm focused on making products that
+    and it's easy to use. Right now, I'm working at <a class="pink" href="https://www.bayt.com/">Bayt.com</a>,
+    and I'm focused on making products that
     are easy for everyone to use, and that are designed with people in mind.
   </p>
 
@@ -45,9 +47,12 @@
 
 <section class="container" id="about" style="">
   <div>
-    <h4>
-      About me
-    </h4>
+    <div class="section-header">
+      <h4>
+        About me
+      </h4>
+      <hr>
+    </div>
     <!-- write a brief introduction about a person -->
     <p>
       Growing up, I loved playing with gadgets and figuring out how they worked. I was always
@@ -68,7 +73,33 @@
     <img alt="" class="personal-images" src="https://i.imgur.com/XoUUN44.png">
   </div>
 </section>
+<section class="container">
+  <div id="contact">
+    <div>
 
+      <div class="section-header">
+        <h4>
+          Contact Me
+        </h4>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <p>If you're interested in working together or have any questions, please don't hesitate to
+    contact me. </p>
+  <div class="contact-form">
+    <form action="https://formspree.io/f/mayzqoje"
+          method="POST">
+      <div class="contact-data">
+        <input placeholder="Name" type="text">
+        <input placeholder="Email" type="email">
+      </div>
+      <input placeholder="Your Subject" name="Subject" type="text">
+      <textarea cols="30" id="" name="" placeholder="Message" rows="10"></textarea>
+      <button class="btn">Send</button>
+    </form>
+  </div>
+</section>
 <footer class="container">
   <div class="flex">
     <p>Developed by Hamza Malkawi</p>
@@ -79,5 +110,7 @@
     <img alt="" src="assets/linkedin.png">
   </div>
 </footer>
+
+<script src="main.js"></script>
 </body>
 </html>
