@@ -13,21 +13,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header-container">
-  <img alt="" class="logo-header" src="assets/1.png">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="">Experience</a></li>
-    <li><a href="">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li>
-      <a class="btn"
-         href="https://www.dropbox.com/s/kjjio0729vwfjp2/Hamza%20Malkawi%20-%20CV.pdf?dl=0">Resume</a>
-    </li>
-  </ul>
-</header>
+<div>
 
-<div class="container bio">
+  <header class="container">
+    <nav class="header-container container">
+      <a href="/">
+        <img alt="" class="logo-header" src="assets/1.png">
+      </a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="">Experience</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="btn"
+             href="https://www.dropbox.com/s/kjjio0729vwfjp2/Hamza%20Malkawi%20-%20CV.pdf?dl=0">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<div class="container bio flex">
   <p>Hello 👋, my name is</p>
   <p class="pink big-heading">Hamza Malkawi</p>
   <!--  I make the web simple, I code for the web-->
@@ -100,15 +106,12 @@
     </form>
   </div>
 </section>
-<footer class="container">
-  <div class="flex">
-    <p>Developed by Hamza Malkawi</p>
-    <p>Hosted on GitHub Pages</p>
-  </div>
-  <div>
-    <img alt="" src="assets/github.png">
-    <img alt="" src="assets/linkedin.png">
-  </div>
+<footer class="container social-contact">
+    <p>Developed by <span class="pink">Hamza Malkawi</span></p>
+    <div class="social-icons">
+      <img alt="https://github.com/Malkawi98" src="assets/github.png">
+      <img alt="https://www.linkedin.com/in/hamzamk/" src="assets/linkedin.png">
+    </div>
 </footer>
 
 <script src="main.js"></script>

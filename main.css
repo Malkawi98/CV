@@ -28,6 +28,7 @@ body {
 
 .header-container {
   color: #fff;
+  /*margin-top: 20px;*/
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -44,7 +45,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 11;
-  padding: 0 50px;
+  padding: 50px 50px 0;
   width: 100%;
   height: var(--nav-height);
   background-color: #28282d;
@@ -55,6 +56,12 @@ body {
   user-select: auto !important;
 }
 
+.header-container.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
 ul > li {
   display: inline-block;
   margin: 0 1rem;
@@ -94,15 +101,53 @@ ul > li {
   line-height: 1.5;
   box-sizing: inherit;
   max-width: 1600px;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  flex-direction: column;
+
   align-items: flex-start;
   padding: 0 150px;
 
 }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width:768px) {
+  .container {
+    max-width:45rem;
+  }
+}
+@media (min-width:1024px) {
+  .container {
+    max-width:960px
+  }
+}
+@media (min-width:1280px) {
+  .container {
+    max-width:1152px;
+  }
+}
+@media (min-width:1536px) {
+  .container {
+    max-width:1244px
+  }
+}
+
+/*@media (min-width: 768px) {*/
+/*  .container {*/
+/*    width: 750px;*/
+/*  }*/
+/*}*/
+/*@media (min-width: 992px) {*/
+/*  .container {*/
+/*    width: 970px;*/
+/*  }*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*  .container {*/
+/*    width: 1170px;*/
+/*  }*/
+/*}*/
 
 .bio {
   min-height: 100vh;
@@ -158,6 +203,8 @@ body {
   grid-template-columns: 3fr 2fr;
   grid-auto-rows: 1fr;
   gap: 75px;
+}
+#contact {
   width: 100%;
 }
 
@@ -235,4 +282,28 @@ textarea {
 
 section {
   margin-bottom: 200px;
+}
+
+.flex {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-contact {
+
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  padding-bottom: 20px;
 }
