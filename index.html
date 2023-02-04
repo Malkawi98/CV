@@ -19,13 +19,25 @@
   <header class="container">
     <nav class="header-container container">
       <a href="/">
-        <img alt="" class="logo-header" src="assets/1.png">
+        <img alt="logo" class="logo-header" src="assets/logo.png">
       </a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="">Experience</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">
+          <span class="primary">About</span>
+          <span aria-hidden="true" class="secondary">About</span>
+        </a></li>
+        <li><a href="">
+          <span class="primary">Experience</span>
+          <span aria-hidden="true" class="secondary">Experience</span>
+        </a></li>
+        <li><a href=""> <span class="primary">Projects</span>
+          <span aria-hidden="true" class="secondary">Projects</span>
+        </a></li>
+        <li><a href="#contact">
+          <span class="primary">Contact</span>
+          <span aria-hidden="true" class="secondary">Contact</span>
+
+        </a></li>
         <li>
           <a class="btn"
              href="https://www.dropbox.com/s/kjjio0729vwfjp2/Hamza%20Malkawi%20-%20CV.pdf?dl=0">Resume</a>
@@ -48,7 +60,7 @@
     are easy for everyone to use, and that are designed with people in mind.
   </p>
 
-  <button class="btn">Get In Touch</button>
+  <a href="mailto:mkjhamza@gmail.com" class="btn">Get In Touch</a>
 
 </div>
 
@@ -101,18 +113,35 @@
         <input placeholder="Name" type="text">
         <input placeholder="Email" type="email">
       </div>
-      <input placeholder="Your Subject" name="Subject" type="text">
+      <input name="Subject" placeholder="Your Subject" type="text">
       <textarea cols="30" id="" name="" placeholder="Message" rows="10"></textarea>
       <button class="btn">Send</button>
     </form>
   </div>
 </section>
 <footer class="container social-contact">
-    <p>Developed by <span class="pink">Hamza Malkawi</span></p>
-    <div class="social-icons">
-      <img alt="https://github.com/Malkawi98" src="assets/github.png">
-      <img alt="https://www.linkedin.com/in/hamzamk/" src="assets/linkedin.png">
-    </div>
+  <p>Developed by <span class="pink">Hamza Malkawi</span></p>
+  <div class="social-icons">
+    <a aria-label="Linkedin" href="https://www.linkedin.com/in/hamzamk/" rel="noreferrer"
+       target="_blank">
+      <svg class="feather feather-linkedin" fill="none" role="img" stroke="currentColor"
+           stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title>
+        <path
+          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+        <rect height="12" width="4" x="2" y="9"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+      </svg>
+    </a>
+    <a href="https://github.com/Malkawi98">
+      <svg class="feather feather-github" fill="none" role="img" stroke="currentColor"
+           stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg"><title>GitHub</title>
+        <path
+          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+      </svg>
+    </a>
+  </div>
 </footer>
 
 <script src="main.js"></script>
