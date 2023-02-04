@@ -37,3 +37,19 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.querySelector(".navbar").addEventListener("click",function () {
+    document.querySelector('body').classList.toggle("nav-open");
+  });
+
+  let navItems = document.querySelectorAll(".nav-item")
+  navItems.forEach(function (item) {
+    item.addEventListener("click",function () {
+      document.querySelector('body').classList.toggle("nav-open");
+    });
+  });
+
+});
+
+

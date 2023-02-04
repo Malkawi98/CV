@@ -8,6 +8,7 @@
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Hamza Malkawi</title>
   <link href="main.css" rel="stylesheet">
+  <link href="navbar.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,12 +16,36 @@
 </head>
 <body>
 <div>
+
   <header class="container">
     <nav class="header-container container">
       <a href="/">
         <img alt="logo" class="logo-header" src="assets/logo.png">
       </a>
-      <ul>
+      <ul class="nav-list">
+        <li class="burger">
+
+          <div class="navbar">
+
+            <div></div>
+
+            <a class="nav-button"><span
+              id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
+          </div>
+
+          <div class="fixed-top main-menu">
+            <div class="h-50 d-flex flex-start p-5 mt-5">
+              <ul class="nav flex-column justify-content-center m5 nav-mobile flex-nowrap">
+                <li class="nav-item delay-1"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item delay-2"><a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item delay-3"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item delay-4"><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
         <li><a href="#about">
           <span class="primary">About</span>
           <span aria-hidden="true" class="secondary">About</span>
@@ -54,7 +79,11 @@
     I'm a software engineer from Amman, Jordan. I love making stuff that you can find on the
     internet,
     like websites and apps. My goal is to always make sure that what I build looks and works great,
-    and it's easy to use. Right now, I'm working at <a class="pink" href="https://www.bayt.com/">Bayt.com</a>,
+    and it's easy to use.
+  </p>
+
+  <p class="statement">
+    Right now, I'm working at <a class="pink" href="https://www.bayt.com/">Bayt.com</a>,
     and I'm focused on making products that
     are easy for everyone to use, and that are designed with people in mind.
   </p>
