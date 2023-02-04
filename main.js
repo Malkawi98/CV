@@ -1,11 +1,11 @@
-var lastScrollTop; // This Varibale will store the top position
+let lastScrollTop; // This Varibale will store the top position
 
 navbar = document.querySelector(".header-container"); // Get The NavBar
 
 window.addEventListener('scroll',function(){
   //on every scroll this funtion will be called
 
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   //This line will get the location on scroll
 
   if(scrollTop > lastScrollTop){ //if it will be greater than the previous
@@ -19,3 +19,21 @@ window.addEventListener('scroll',function(){
 
   lastScrollTop = scrollTop; //New Position Stored
 });
+
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
