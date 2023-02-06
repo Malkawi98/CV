@@ -178,8 +178,6 @@
   left: 50%;
 }
 
-
-
 .nav-button {
   font-size: 1rem;
   font-weight: 400;
@@ -211,4 +209,32 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+}
+
+
+.logo {
+  font: 19px/23px Agustina;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.3em;
+  display: flex;
+  align-items: end;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.logo-name {
+  font: 19px/23px Agustina, sans-serif;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.lt {
+  font: 19px/23px Montserrat, sans-serif;
+  font-size: 1.3em;
+  box-sizing: border-box;
+}
+.nav-logo {
+  margin-left: 0;
+  padding-left: 0;
 }

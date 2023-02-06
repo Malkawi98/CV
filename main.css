@@ -34,6 +34,11 @@ body {
   background-color: #28282d;
 }
 
+@font-face {
+  font-family: 'Agustina';
+  src: url('Agustina.woff') format('woff2');
+}
+
 .header-container {
   color: #fff;
   /*margin-top: 20px;*/
@@ -402,12 +407,17 @@ section .text-container .text-box h3 {
   .burger {
     display: block;
   }
-
   #about, #contact {
     display: block;
   }
 }
 
+@media (max-width: 768px) {
+
+  .burger {
+    display: block;
+  }
+}
 
 @media (min-width: 1024px) {
   .container {
