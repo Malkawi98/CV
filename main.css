@@ -39,6 +39,10 @@ body {
   src: url('Agustina.woff') format('woff2');
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-container {
   color: #fff;
   /*margin-top: 20px;*/
@@ -305,7 +309,9 @@ section {
   -webkit-box-align: center;
   padding-bottom: 20px;
 }
-
+.project-links {
+  margin-top: 10px;
+}
 .social-contact > p {
   margin: 0;
 }
@@ -344,7 +350,7 @@ li > a::before {
   height: 0.075em;
   background-color: var(--pikachu);
   position: absolute;
-  bottom: 0em;
+  bottom: 0;
   transform: scaleX(0);
   transition: all 350ms ease-out;
   transform-origin: left center;
@@ -361,6 +367,56 @@ li > a:hover .secondary {
 li > a:hover::before {
   transform: scaleX(1);
   transition-delay: 200ms;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project {
+  width: 50%;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-url {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.project-body > p {
+  color: rgb(209 213 219/1);
+  font-size: 1.0rem;
+  font-weight: lighter;
+}
+
+.project-url::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--pikachu);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.project-url:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.project-links a > i {
+  font-size: 1.3rem;
 }
 
 svg {
@@ -399,6 +455,71 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  position: relative;
+  display: inline-block;
+  background: #18181b;
+  color: white;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: 0.5s all ease;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  color-scheme: dark;
+  border: 0 solid #e5e7eb;
+  text-decoration: inherit;
+  padding: .25rem .5rem;
+  transition-property: all;
+  transition-duration: .15s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.pill:hover {
+  background: #ffffff;
+  color: #191a19;
+}
+.pill:hover i {
+  color: #191a19;
+}
+.pill > svg {
+  color: black;
+  width: 16px;
+  height: 16px;
+}
+
+.project {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(53, 72, 91, .07), 0 2px 2px rgba(0, 0, 0, .01), 0 4px 4px rgba(0, 0, 0, .02), 0 10px 8px rgba(0, 0, 0, .03), 0 15px 15px rgba(0, 0, 0, .03), 0 30px 30px rgba(0, 0, 0, .04), 0 70px 65px rgba(0, 0, 0, .05);
+}
+
+.project-body {
+  padding: 20px;
+}
+
+.portfolio-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s all ease;
+}
+
+
+.project {
+  width: 100%;
+}
+#projects {
+  min-height: 100vh;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 45rem;
@@ -407,6 +528,7 @@ section .text-container .text-box h3 {
   .burger {
     display: block;
   }
+
   #about, #contact {
     display: block;
   }
@@ -425,13 +547,16 @@ section .text-container .text-box h3 {
   }
 
   .nav-list > li:not(:first-child) {
-    display: inline-block;
-  }
-
-  .burger {
     display: none;
   }
 
+  .burger {
+    display: block;
+  }
+
+  .project {
+    width: 50%;
+  }
 
 }
 
@@ -447,6 +572,17 @@ section .text-container .text-box h3 {
     gap: 75px;
   }
 
+  .nav-list > li:not(:first-child) {
+    display: inline-block;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .project {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1536px) {
