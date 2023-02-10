@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Proxima', sans-serif;
   color: white;
   --color: #ff577a;
   --fz-xxs: 12px;
@@ -36,7 +36,12 @@ body {
 
 @font-face {
   font-family: 'Agustina';
-  src: url('Agustina.woff') format('woff2');
+  src: url('assets/Agustina.woff') format('woff2');
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('assets/Proxima Nova Font.otf') format('woff2');
 }
 
 a {
@@ -51,7 +56,7 @@ a {
   align-items: center;
   text-align: center;
   transition: 0.5s;
-  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  --font-sans: "Raleway", "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
@@ -350,7 +355,6 @@ li > a::before:not(:last-child) {
   height: 0.075em;
   background-color: var(--pikachu);
   position: absolute;
-  bottom: 0;
   transform: scaleX(0);
   transition: all 350ms ease-out;
   transform-origin: left center;
@@ -498,6 +502,8 @@ section .text-container .text-box h3 {
   transition: 0.3s ease-in-out;
   border-radius: 8px;
   box-shadow: 0 0 0 1px rgba(53, 72, 91, .07), 0 2px 2px rgba(0, 0, 0, .01), 0 4px 4px rgba(0, 0, 0, .02), 0 10px 8px rgba(0, 0, 0, .03), 0 15px 15px rgba(0, 0, 0, .03), 0 30px 30px rgba(0, 0, 0, .04), 0 70px 65px rgba(0, 0, 0, .05);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-body {
@@ -510,6 +516,8 @@ section .text-container .text-box h3 {
   overflow: hidden;
   border-radius: 10px;
   transition: 0.5s all ease;
+  max-height: 300px;
+  flex: 1 0 auto;
 }
 
 
@@ -558,6 +566,10 @@ section .text-container .text-box h3 {
     width: 50%;
   }
 
+  .projects{
+   flex-direction: row;
+  }
+
 }
 
 @media (min-width: 1280px) {
@@ -590,4 +602,30 @@ section .text-container .text-box h3 {
     max-width: 1244px
   }
 
+}
+
+p > svg {
+  stroke-width: 0;
+  height: 1em;
+  width: 1em;
+  box-sizing: border-box;
+  vertical-align: middle;
+  fill: rgb(249, 123, 88);
+  stroke: rgb(249, 123, 88);
+  margin-right: 5px;
+  font-size: 16px;
+}
+.experiences {
+  margin-bottom: 100px;
+}
+.experience > h3, .experience > h4, .experience > p:first-of-type {
+  margin: 10px 0;
+}
+
+.experience > h3 {
+  font-size: 23px;
+}
+
+.experience > h4 {
+  font-size: 18px;
 }
