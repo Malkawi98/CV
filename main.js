@@ -39,7 +39,7 @@ window.addEventListener("scroll", reveal);
 document.addEventListener("DOMContentLoaded", function (event) {
   document.querySelector(".navbar").addEventListener("click", function () {
     document.querySelector('body').classList.toggle("nav-open");
-    document.querySelector('.main-menu').classList.toggle("d-none");
+    document.querySelector('.nav').classList.toggle("d-none");
   });
 
   let navItems = document.querySelectorAll(".nav-item")
@@ -50,5 +50,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
 });
-
-

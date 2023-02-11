@@ -396,6 +396,7 @@ li .nav-item:hover::before {
 
 .project {
   width: 50%;
+  background: #2e2e34;
 }
 
 .project-links {
