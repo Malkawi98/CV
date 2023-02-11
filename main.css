@@ -673,3 +673,7 @@ p > svg {
   cursor: pointer;
 }
 
+
+.d-none {
+  display:none;
+}
