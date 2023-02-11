@@ -49,4 +49,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   });
 
+  document.querySelectorAll(".nav-item").forEach(function (item) {
+    item.addEventListener("click", function () {
+      document.querySelector('.nav').classList.toggle("d-none");
+      document.querySelector('body').classList.toggle("nav-open");
+    });
+  });
 });

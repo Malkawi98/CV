@@ -44,6 +44,9 @@
   opacity: 0;
   visibility: hidden;
 }
+.nav-open {
+  overflow: hidden;
+}
 .nav-open .main-menu {
   opacity: 1;
   visibility: visible;
