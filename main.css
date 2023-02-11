@@ -391,7 +391,7 @@ li .nav-item:hover::before {
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .project {
@@ -635,7 +635,7 @@ p > svg {
   font-size: 16px;
 }
 
-.experiences {
+.experience {
   margin-bottom: 100px;
 }
 
