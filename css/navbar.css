@@ -247,13 +247,7 @@
 .logo-name {
   font: 19px/23px Agustina, sans-serif;
   font-size: 1.3em;
-  box-sizing: border-box;
   font-weight: 700;
-}
-
-.lt {
-  font: 19px/23px Montserrat, sans-serif;
-  box-sizing: border-box;
 }
 
 .nav-logo {

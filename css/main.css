@@ -559,6 +559,9 @@ section .text-container .text-box h3 {
   .short-name {
     font-size: 0.5em;
   }
+  .lt {
+    font: 19px/23px Montserrat, sans-serif;
+  }
 }
 
 @media (max-width: 500px) {
@@ -664,7 +667,6 @@ p > svg {
   stroke-width: 0;
   height: 1em;
   width: 1em;
-  box-sizing: border-box;
   vertical-align: middle;
   fill: rgb(249, 123, 88);
   stroke: rgb(249, 123, 88);
