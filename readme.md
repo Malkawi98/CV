@@ -32,4 +32,4 @@ License
 This project is licensed under the MIT License. See LICENSE for details.
 Contact
 
-For any inquiries, you can reach me at hamza.malkawi@outlook.com.
+For any inquiries, you can reach me at mkjhamza@gmail.com.
