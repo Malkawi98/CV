@@ -37,11 +37,13 @@ body {
 @font-face {
   font-family: 'Agustina';
   src: url('assets/Agustina.woff') format('woff2');
+  font-display: fallback;
 }
 
 @font-face {
   font-family: 'Proxima';
   src: url('assets/Proxima Nova Font.otf') format('woff2');
+  font-display: fallback;
 }
 
 a {
@@ -83,6 +85,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
+  margin: 0 -10px;
 }
 
 ul > li {
@@ -545,6 +548,41 @@ section .text-container .text-box h3 {
 
 #projects {
   min-height: 100vh;
+}
+
+.short-name {
+  display: none;
+  font-family: Agustina, sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 0px) {
+  .short-name {
+    font-size: 0.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-name {
+    display: none;
+  }
+
+  .short-name {
+    display: block;
+  }
+
+  .nav-list {
+    padding: 0;
+  }
+
+  .header-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .short-name {
+    font-size: 0.7em;
+  }
 }
 
 @media (min-width: 768px) {
