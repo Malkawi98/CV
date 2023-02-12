@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelector('.nav').classList.toggle("d-none");
   });
 
-  let navItems = document.querySelectorAll(".nav-item")
+  let navItems = document.querySelectorAll(".burger-nav")
   navItems.forEach(function (item) {
     item.addEventListener("click", function () {
-      document.querySelector('.nav').classList.toggle("d-none");
+      document.querySelector('.nav-link').classList.toggle("d-none");
       document.querySelector('body').classList.toggle("nav-open");
       setTimeout(function (){
         window.scrollBy(0,1)
