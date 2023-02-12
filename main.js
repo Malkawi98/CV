@@ -37,7 +37,7 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  document.querySelector(".navbar").addEventListener("click", function () {
+  document.querySelector("#nav-icon3").addEventListener("click", function () {
     document.querySelector('body').classList.toggle("nav-open");
     document.querySelector('.nav').classList.toggle("d-none");
   });
@@ -45,14 +45,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let navItems = document.querySelectorAll(".nav-item")
   navItems.forEach(function (item) {
     item.addEventListener("click", function () {
+      document.querySelector('.nav').classList.toggle("d-none");
       document.querySelector('body').classList.toggle("nav-open");
+      setTimeout(function (){
+        window.scrollBy(0,1)
+      }, 500)
     });
   });
 
-  document.querySelectorAll(".nav-item").forEach(function (item) {
-    item.addEventListener("click", function () {
-      document.querySelector('.nav').classList.toggle("d-none");
-      document.querySelector('body').classList.toggle("nav-open");
-    });
-  });
 });
