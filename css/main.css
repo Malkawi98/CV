@@ -392,7 +392,7 @@ li .nav-item:hover::before {
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px 30px;
 }
 
 .project {
@@ -545,10 +545,6 @@ section .text-container .text-box h3 {
   width: 100%;
 }
 
-#projects {
-  min-height: 100vh;
-}
-
 .short-name {
   display: none;
   font-family: Agustina, sans-serif;
@@ -641,6 +637,10 @@ section .text-container .text-box h3 {
     grid-template-columns: 3fr 2fr;
     grid-auto-rows: 1fr;
     gap: 75px;
+  }
+
+  #about {
+    margin-top: 100px;
   }
 
   .nav-list > li:not(:first-child) {
