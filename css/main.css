@@ -558,6 +558,7 @@ section .text-container .text-box h3 {
   .lt {
     font: 19px/23px Montserrat, sans-serif;
   }
+
 }
 
 @media (max-width: 500px) {
