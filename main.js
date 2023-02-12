@@ -47,10 +47,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     item.addEventListener("click", function () {
       document.querySelector('.nav-link').classList.toggle("d-none");
       document.querySelector('body').classList.toggle("nav-open");
-      setTimeout(function (){
-        window.scrollBy(0,1)
-      }, 500)
     });
   });
+});
 
+document.querySelectorAll(".web-nav").forEach(function (item) {
+  item.addEventListener("click", function () {
+    setTimeout(function(){
+      window.scrollBy(0, 1)
+    },400)
+  });
 });
