@@ -1,4 +1,4 @@
-Hamza Malkawi Portfolio Website
+[Hamza Malkawi Portfolio Website](https://hamzamalkawi.com/)
 
 This is the source code for my personal portfolio website, showcasing my projects and experience as a software engineer. The website is live at hamzamalkawi.com.
 Features
