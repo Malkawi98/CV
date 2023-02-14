@@ -58,3 +58,13 @@ document.querySelectorAll(".web-nav").forEach(function (item) {
     },400)
   });
 });
+
+document.querySelectorAll(".nav-link").forEach(function (item) {
+  item.addEventListener("click", function () {
+    document.querySelector('.nav-mobile').classList.toggle("d-none");
+    document.querySelector('body').classList.toggle("nav-open");
+    setTimeout(function(){
+      window.scrollBy(0, 2)
+    },700)
+  });
+});
