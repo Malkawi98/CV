@@ -1,21 +1,17 @@
-let lastScrollTop; // This Varibale will store the top position
+let lastScrollTop;
 
 navbar = document.querySelector(".header-container"); // Get The NavBar
 
 window.addEventListener('scroll', function () {
-  //on every scroll this funtion will be called
-
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //This line will get the location on scroll
 
-  if (scrollTop > lastScrollTop) { //if it will be greater than the previous
+  if (scrollTop > lastScrollTop) {
     navbar.style.top = '-120px';
-    //set the value to the negetive of height of navbar
   } else {
     navbar.style.top = '0';
   }
 
-  lastScrollTop = scrollTop; //New Position Stored
+  lastScrollTop = scrollTop;
 });
 
 function reveal() {
@@ -36,7 +32,7 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#nav-icon3").addEventListener("click", function () {
     document.querySelector('body').classList.toggle("nav-open");
     document.querySelector('.nav').classList.toggle("d-none");
@@ -55,7 +51,7 @@ document.querySelectorAll(".web-nav").forEach(function (item) {
   item.addEventListener("click", function () {
     setTimeout(function(){
       window.scrollBy(0, 1)
-    },400)
+    },900)
   });
 });
 
@@ -64,7 +60,7 @@ document.querySelectorAll(".nav-link").forEach(function (item) {
     document.querySelector('.nav-mobile').classList.toggle("d-none");
     document.querySelector('body').classList.toggle("nav-open");
     setTimeout(function(){
-      window.scrollBy(0, 2)
-    },700)
+      window.scrollBy(0, 1)
+    },900)
   });
 });
