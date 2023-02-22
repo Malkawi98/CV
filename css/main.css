@@ -327,6 +327,7 @@ section {
   justify-content: space-between;
   -webkit-box-align: center;
   padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .project-links {
@@ -562,6 +563,16 @@ section .text-container .text-box h3 {
     font-size: 19px ;
   }
 
+  .image-section {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .image-section > img {
+    width: 200px;
+    height: 200px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -603,6 +614,7 @@ section .text-container .text-box h3 {
   #about, #contact {
     display: block;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -728,4 +740,9 @@ p > svg {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+.developed-by > p {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
