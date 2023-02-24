@@ -1,0 +1,28 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "[Hamza Malkawi Portfolio Website](https://hamzamalkawi.com/)",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malkawi98/CV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malkawi98/CV/issues"
+  },
+  "homepage": "https://github.com/Malkawi98/CV#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "@parcel/compressor-brotli": "^2.8.3",
+    "@parcel/compressor-gzip": "^2.8.3"
+  }
+}
