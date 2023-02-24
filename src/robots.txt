@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://hamzamalkawi.com/sitemap.xml
