@@ -486,8 +486,9 @@ section .text-container .text-box h3 {
 }
 
 .pill {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   background: #18181b;
   color: white;
   text-decoration: none;
@@ -509,7 +510,7 @@ section .text-container .text-box h3 {
   color: #191a19;
 }
 
-.pill:hover i {
+.pill:hover > * {
   color: #191a19;
 }
 

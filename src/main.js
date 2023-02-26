@@ -33,6 +33,11 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 document.addEventListener("DOMContentLoaded", function () {
+  let link = document.createElement('link');
+  link.href = 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css';
+  link.rel = 'stylesheet';
+  document.head.appendChild(link);
+
   document.querySelector("#nav-icon3").addEventListener("click", function () {
     document.querySelector('body').classList.toggle("nav-open");
     document.querySelector('.nav').classList.toggle("d-none");
@@ -64,3 +69,5 @@ document.querySelectorAll(".nav-link").forEach(function (item) {
     },900)
   });
 });
+
+
