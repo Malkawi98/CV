@@ -399,7 +399,7 @@ li .nav-item:hover::before {
 }
 
 .project {
-  width: 50%;
+  width: 45%;
   background: #2e2e34;
 }
 
@@ -673,7 +673,7 @@ section .text-container .text-box h3 {
   }
 
   .project {
-    width: 50%;
+    width: 45%;
   }
 }
 

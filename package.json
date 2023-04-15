@@ -5,7 +5,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build ./src/index.html --public-url ./"
+    "build": "parcel build ./src/index.html --public-url ./",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Malkawi98/CV#readme",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3"
   },
   "dependencies": {
