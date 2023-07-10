@@ -36,13 +36,13 @@ body {
 
 @font-face {
   font-family: 'Agustina';
-  src: url('/src/assets/Agustina.woff') format('woff2');
+  src: url('../assets/Agustina.woff') format('woff2');
   font-display: fallback;
 }
 
 @font-face {
   font-family: 'Proxima';
-  src: url('/src/assets/Proxima Nova Font.otf') format('woff2');
+  src: url('../assets/Proxima Nova Font.otf') format('woff2');
   font-display: fallback;
 }
 
