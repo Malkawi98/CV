@@ -545,6 +545,9 @@ section .text-container .text-box h3 {
   object-fit: fill;
 }
 
+.mobile-project {
+  object-fit: contain;
+}
 
 .project {
   width: 100%;
